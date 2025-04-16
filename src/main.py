@@ -28,8 +28,7 @@ from tabulate import tabulate
 from utils.visualize import save_graph_as_png
 import json
 
-# Load environment variables from .env file
-load_dotenv()
+
 
 init(autoreset=True)
 
