@@ -489,6 +489,8 @@ def calculate_hurst_exponent(price_series: pd.Series, max_lag: int = 20) -> floa
     H = 0.5: Random walk
     H > 0.5: Trending series
 
+    Support ....
+
     Args:
         price_series: Array-like price data
         max_lag: Maximum lag for R/S calculation
