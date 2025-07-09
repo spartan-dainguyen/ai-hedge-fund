@@ -22,6 +22,8 @@ def cathie_wood_agent(state: AgentState):
     2. Focuses on industries with rapid adoption curves and massive TAM (Total Addressable Market).
     3. Invests mostly in AI, robotics, genomic sequencing, fintech, and blockchain.
     4. Willing to endure short-term volatility for long-term gains.
+
+    // Update outdated comment please
     """
     data = state["data"]
     end_date = data["end_date"]
