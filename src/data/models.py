@@ -147,3 +147,8 @@ class AgentStateData(BaseModel):
 class AgentStateMetadata(BaseModel):
     show_reasoning: bool = False
     model_config = {"extra": "allow"}
+
+class AgentStateMetadataExperimental(BaseModel):
+    show_reasoning: bool = False
+    model_config = {"extra": "allow"}
+    streaming = False
