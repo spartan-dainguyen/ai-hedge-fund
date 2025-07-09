@@ -183,6 +183,7 @@ def analyze_fisher_growth_quality(financial_line_items: list) -> dict:
 
     # 1. Revenue Growth (YoY)
     revenues = [fi.revenue for fi in financial_line_items if fi.revenue is not None]
+    # Refactor this nested if else
     if len(revenues) >= 2:
         # We'll look at the earliest vs. latest to gauge multi-year growth if possible
         latest_rev = revenues[0]
