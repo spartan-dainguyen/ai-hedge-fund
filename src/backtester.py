@@ -51,7 +51,8 @@ class Backtester:
         :param selected_analysts: List of analyst names or IDs to incorporate.
         :param initial_margin_requirement: The margin ratio (e.g. 0.5 = 50%).
         """
-        self.agent = agent
+        # Initializing
+        self.agent = agent 
         self.tickers = tickers
         self.start_date = start_date
         self.end_date = end_date
