@@ -81,6 +81,7 @@ def sentiment_agent(state: AgentState):
 
         progress.update_status("sentiment_agent", ticker, "Done")
 
+    # TODO...
     # Create the sentiment message
     message = HumanMessage(
         content=json.dumps(sentiment_analysis),
