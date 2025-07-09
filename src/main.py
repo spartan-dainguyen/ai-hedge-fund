@@ -170,6 +170,7 @@ if __name__ == "__main__":
         "--ollama", action="store_true", help="Use Ollama for local LLM inference"
     )
 
+    # Please do something
     args = parser.parse_args()
 
     # Parse tickers from comma-separated string
