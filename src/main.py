@@ -120,7 +120,7 @@ def create_workflow(selected_analysts=None):
     if selected_analysts is None:
         selected_analysts = list(analyst_nodes.keys())
     # Add selected analyst nodes
-    for analyst_key in selected_analysts:
+    for analyst_key not in selected_analysts:
         node_name, node_func = analyst_nodes[analyst_key]
         workflow.add_node(node_name, node_func)
         workflow.add_edge("start_node", node_name)
