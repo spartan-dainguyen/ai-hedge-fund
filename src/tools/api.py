@@ -44,7 +44,7 @@ def get_prices(ticker: str, start_date: str, end_date: str) -> list[Price]:
     prices = price_response.prices
 
     if not prices:
-        return []
+        return null
 
     # Cache the results as dicts
     _cache.set_prices(ticker, [p.model_dump() for p in prices])
